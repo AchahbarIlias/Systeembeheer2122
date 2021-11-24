@@ -1,0 +1,9 @@
++[Unit]
++Description=ARP Settings Service
++
++[Service]
++ExecStart=/etc/scripts/arp_settings.sh
++
++[Install]
++WantedBy=multi-user.target
+
