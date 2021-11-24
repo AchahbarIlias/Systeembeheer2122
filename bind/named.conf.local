@@ -6,3 +6,22 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "ilias-achahbar.sb.uclllabs.be" {
+	type master;
+	file "/etc/bind/db.ilias-achahbar.sb.uclllabs.be";
+	allow-update{none;};
+	notify yes;
+	also-notify{193.191.176.254;193.191.177.4;};
+	allow-transfer {
+		193.191.176.254;
+		193.191.177.4;
+		193.191.177.136;
+		193.191.177.152;
+	};
+};
+
+zone "ben-verbiest.sb.uclllabs.be" {
+        type slave;
+       	masters { 193.191.177.136; };
+};
+
