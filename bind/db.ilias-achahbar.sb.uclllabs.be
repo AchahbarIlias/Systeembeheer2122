@@ -3,7 +3,7 @@
 ;
 $TTL    604800
 @       IN      SOA      ns.ilias-achahbar.sb.uclllabs.be. root.ilias-achahbar.sb.uclllabs.be. (
-                         80858103               ;Serial
+                         80858105               ;Serial
                          300                    ; Refresh
                          300                    ; Retry
                          300                    ; Expire
@@ -18,7 +18,9 @@ $TTL    604800
 
 
 @                               IN      A       193.191.177.152
+				IN 	AAAA 	2001:6a8:2889:a077::
 ns                              IN      A       193.191.177.152
+				IN 	AAAA 	2001:6a8:2889:a077::
 www                             IN      A       193.191.177.152
 www1                            IN      A       193.191.177.152
 www2                            IN      A       193.191.177.152
@@ -26,6 +28,8 @@ test                            IN      A       193.191.177.254
 website                         IN      A       193.191.177.152
 secure				IN	A	193.191.177.152
 supersecure			IN	A	193.191.177.152
+
+
 
 _acme-challenge 				IN TXT QrPS1qeXaxbEPDkN-L1fEL-_mNARZNwEnQSxXIQ9_Wk
 _acme-challenge.secure 				IN TXT lImiPvYTzgy-ipa0jlpf7GFRkYaIh7m7AMAIv8gTGEw
